@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = "This is nothing like the truth especially on a tuesday"
+    @State private var messageString = "It aint us two - its the other three !!"
     var body: some View {
         VStack{
             Text(messageString)
@@ -23,14 +23,14 @@ struct ContentView: View {
                 .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 1)
 
             HStack {
-                Button("Awesome") {
+                Button("who is it ?") {
                     //This is the action performed when the button is pressed
-                    messageString = "You are Awesome!"
+                    messageString = "Jess, Anna!"
                 }
                 .buttonStyle(.borderedProminent)
-                Button("Great") {
+                Button("and who else") {
                     
-                    messageString = "You are Great"            }
+                    messageString = "Lauren"            }
                 .buttonStyle(.borderedProminent)
                 
             }
